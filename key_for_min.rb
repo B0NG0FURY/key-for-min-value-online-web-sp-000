@@ -14,8 +14,8 @@ def key_for_min_value(name_hash)
      if num_array[i] < low_num
        low_num = num_array[i]
        low_name = name_array[i]
-       i += 1
      end
+     i += 1
    end
    end
    low_name
