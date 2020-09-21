@@ -8,6 +8,13 @@ def key_for_min_value(name_hash)
    name_array = name_hash.collect {|name, num| name}
    num_array = name_hash.collect {|name, num| num}
    lowest = num_array[0]
-   num_array.each do
+   low_name = name_array[0]
+   num_array.each do |num|
+     if num < lowest
+       lowest = num
+       low_name = name_array[num]
+     end
+   end
   end
+  low_name
 end
